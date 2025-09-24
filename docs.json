@@ -11,12 +11,70 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Overview",
+        "tab": "Introduction",
         "groups": [
           {
-            "group": "UXarts",
+            "group": "\u200B",
             "pages": [
-              "index",
+              "introduction/welcome",
+              "introduction/getting-started",
+              "introduction/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "\u200B",
+            "pages": [
+              "features/modes",
+              "features/editable-design",
+              "features/code-mode",
+              "features/knowledge",
+              "features/private-projects",
+              "features/publish",
+              "features/custom-domain",
+              "features/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tips & tricks",
+        "groups": [
+          {
+            "group": "\u200B",
+            "pages": [
+              "tips-tricks/best-practice",
+              "tips-tricks/using-images",
+              "tips-tricks/from-idea-to-app",
+              "tips-tricks/avoiding-security-pitfalls"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Use Cases",
+        "groups": [
+          {
+            "group": "\u200B",
+            "pages": [
+              "use-case/inspiration-time",
+              "use-case/landing-page",
+              "use-case/prototype",
+              "use-case/saas"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "\u200B",
+            "pages": [
               "changelog"
             ]
           }
@@ -26,8 +84,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Website",
-          "href": "https://uxarts.ai/",
+          "anchor": "superun",
+          "href": "https://superun.ai/",
           "icon": "globe"
         }
       ]
@@ -40,7 +98,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Website",
+        "label": "UXarts",
         "href": "https://uxarts.ai/"
       }
     ],
