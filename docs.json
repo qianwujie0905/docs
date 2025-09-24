@@ -11,23 +11,29 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Introduction",
+        "tab": "Welcome",
         "groups": [
           {
             "group": "\u200B",
             "pages": [
-              "introduction/welcome",
-              "introduction/getting-started",
-              "introduction/faq"
+              "introduction/overview"
             ]
           }
         ]
       },
       {
-        "tab": "Features",
+        "tab": "Superun",
         "groups": [
           {
-            "group": "\u200B",
+            "group": "Guide",
+            "pages": [
+              "introduction/welcome",
+              "introduction/getting-started",
+              "introduction/faq"
+            ]
+          },
+          {
+            "group": "Features",
             "pages": [
               "features/modes",
               "features/editable-design",
@@ -38,44 +44,72 @@
               "features/custom-domain",
               "features/security"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Tips & tricks",
-        "groups": [
+          },
           {
-            "group": "\u200B",
+            "group": "Tips & tricks",
             "pages": [
               "tips-tricks/best-practice",
               "tips-tricks/using-images",
               "tips-tricks/from-idea-to-app",
               "tips-tricks/avoiding-security-pitfalls"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Use Cases",
-        "groups": [
+          },
           {
-            "group": "\u200B",
+            "group": "Use Cases",
             "pages": [
               "use-case/inspiration-time",
               "use-case/landing-page",
               "use-case/prototype",
               "use-case/saas"
             ]
+          },
+          {
+            "group": "Changelog",
+            "pages": [
+              "superun/changelog"
+            ]
           }
         ]
       },
       {
-        "tab": "Changelog",
+        "tab": "UIdraft",
         "groups": [
           {
-            "group": "\u200B",
+            "group": "Guide",
             "pages": [
-              "changelog"
+              "uidraft/welcome",
+              "uidraft/getting-started",
+              "uidraft/faq"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "uidraft/features"
+            ]
+          },
+          {
+            "group": "Plans",
+            "pages": [
+              "uidraft/pricing"
+            ]
+          },
+          {
+            "group": "Tips & tricks",
+            "pages": [
+              "uidraft/tips"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "uidraft/use-cases"
+            ]
+          },
+          {
+            "group": "Changelog",
+            "pages": [
+              "uidraft/changelog"
             ]
           }
         ]
@@ -86,6 +120,11 @@
         {
           "anchor": "superun",
           "href": "https://superun.ai/",
+          "icon": "globe"
+        },
+        {
+          "anchor": "UIdraft",
+          "href": "https://uidraft.ai/",
           "icon": "globe"
         }
       ]
