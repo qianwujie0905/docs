@@ -1,8 +1,298 @@
-<meta httpEquiv="refresh" content="0; url=/overview" />
+---
+title: "Overview"
+description: "Overview of products: Superun and UIdraft"
+image: "https://b.ux-cdn.com/uxarts/files/t20250924144227/ipkumj75.png"
+hideTableOfContents: true
+---
 
-<script dangerouslySetInnerHTML={{ __html:"\ntry {\n  if (typeof window !== 'undefined') {\n    var target = '/overview';\n    if (window.location.pathname !== target) {\n      window.location.replace(target);\n    }\n  }\n} catch (e) {}\n" }} />
+<!-- Inline include of overview content to avoid redirect flicker -->
 
-If you are not redirected automatically, follow this link: <a href="/overview">
-Overview</a>
+<style>{`
+  /* 完全禁用图片缩放功能 */
+  #overview-container img {
+    pointer-events: none !important;
+  }
+  
+  /* 隐藏所有 rmiz 相关的包装元素 */
+  #overview-container [data-rmiz],
+  #overview-container [aria-owns*="rmiz-modal"],
+  #overview-container [data-rmiz-content],
+  #overview-container [data-rmiz-ghost],
+  #overview-container [data-rmiz-btn-zoom] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  
+  /* 确保图片直接显示，不被包装 */
+  #overview-container img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* 全局隐藏缩放按钮 */
+  [data-rmiz-btn-zoom],
+  [aria-label*="Expand image"] {
+    display: none !important;
+  }
+  
+  /* 隐藏 Copy page 按钮 */
+  #page-context-menu-button,
+  button[id*="page-context-menu"],
+  [id*="page-context-menu-button"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* 隐藏整个页面上下文菜单区域 */
+  #page-context-menu,
+  [id*="page-context-menu"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+`}</style>
 
-.
+<script dangerouslySetInnerHTML={{
+  __html: `
+    function updateTheme() {
+      const isDark = document.documentElement.classList.contains('dark') || 
+                     localStorage.getItem('mintlify-theme') === 'dark' ||
+                     document.body.classList.contains('dark');
+      const container = document.getElementById('overview-container');
+      if (!container) return;
+      if (isDark) {
+        container.style.background = '#0F172A';
+        container.style.color = '#E2E8F0';
+      } else {
+        container.style.background = '#FFFFFF';
+        container.style.color = '#1F2937';
+      }
+      const cards = container.querySelectorAll('.card');
+      cards.forEach(card => {
+        if (isDark) {
+          card.style.background = 'rgba(255, 255, 255, 0.05)';
+          card.style.border = '1px solid rgba(255, 255, 255, 0.1)';
+          card.style.color = '#E2E8F0';
+        } else {
+          card.style.background = 'rgba(0, 0, 0, 0.02)';
+          card.style.border = '1px solid rgba(0, 0, 0, 0.1)';
+          card.style.color = '#1F2937';
+        }
+      });
+      const titles = container.querySelectorAll('.card-title, h1');
+      titles.forEach(title => {
+        title.style.color = isDark ? '#E2E8F0' : '#1F2937';
+      });
+      const descriptions = container.querySelectorAll('.card-description, p');
+      descriptions.forEach(desc => {
+        desc.style.color = isDark ? '#94A3B8' : '#6B7280';
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateTheme);
+    } else {
+      updateTheme();
+    }
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    window.addEventListener('storage', (e) => { if (e.key === 'mintlify-theme') updateTheme(); });
+  `
+}} />
+
+<div 
+  id="overview-container"
+  style={{
+    position: 'fixed',
+    top: '7rem',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 9999,
+    background: '#0F172A',
+    color: '#E2E8F0',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    overflow: 'auto'
+  }}
+>
+  <div style={{
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '2rem',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }}>
+    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+      <h1 style={{ 
+        fontSize: '3rem', 
+        fontWeight: '700', 
+        color: '#38BDF8', 
+        marginBottom: '0.5rem' 
+      }}>
+        Overview
+      </h1>
+      <p style={{ 
+        fontSize: '1.25rem', 
+        color: '#94A3B8', 
+        marginBottom: '2rem' 
+      }}>
+        Overview of products: Superun and UIdraft
+      </p>
+    </div>
+    
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '2rem',
+      width: '100%',
+      maxWidth: '920px',
+      marginBottom: '2rem'
+    }}>
+      <a 
+        href="/superun/introduction/welcome" 
+        className="card"
+        style={{
+          background: 'rgba(255, 255, 255, 0.05)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderRadius: '1rem',
+          padding: '2rem',
+          textDecoration: 'none',
+          color: 'inherit',
+          transition: 'all 0.3s ease',
+          backdropFilter: 'blur(10px)',
+          display: 'block'
+        }}
+      >
+        <div style={{
+          width: '2rem',
+          height: '2rem',
+          marginBottom: '1rem',
+          background: '#38BDF8',
+          borderRadius: '0.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9.937 15.5A2.016 2.016 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2.016 2.016 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.064 8.5A2.016 2.016 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2.016 2.016 0 0 0-1.436 1.437l-1.582 6.135a.5.5 0 0 1-.963 0Z"/>
+          </svg>
+        </div>
+        <h2 className="card-title" style={{ 
+          fontSize: '1.5rem', 
+          fontWeight: '600', 
+          marginBottom: '0.5rem', 
+          color: '#E2E8F0' 
+        }}>
+          Superun
+        </h2>
+        <p className="card-description" style={{ color: '#94A3B8', lineHeight: '1.5' }}>
+          AI-powered builder for websites and apps. Start from a prompt, edit visually or with code, integrate Supabase, and publish fast.
+        </p>
+      </a>
+      
+      <a 
+        href="/uidraft/welcome" 
+        className="card"
+        style={{
+          background: 'rgba(255, 255, 255, 0.05)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderRadius: '1rem',
+          padding: '2rem',
+          textDecoration: 'none',
+          color: 'inherit',
+          transition: 'all 0.3s ease',
+          backdropFilter: 'blur(10px)',
+          display: 'block'
+        }}
+      >
+        <div style={{
+          width: '2rem',
+          height: '2rem',
+          marginBottom: '1rem',
+          background: '#38BDF8',
+          borderRadius: '0.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect width="7" height="9" x="3" y="3" rx="1"/>
+            <rect width="7" height="5" x="14" y="3" rx="1"/>
+            <rect width="7" height="9" x="14" y="12" rx="1"/>
+            <rect width="7" height="5" x="3" y="16" rx="1"/>
+          </svg>
+        </div>
+        <h2 className="card-title" style={{ 
+          fontSize: '1.5rem', 
+          fontWeight: '600', 
+          marginBottom: '0.5rem', 
+          color: '#E2E8F0' 
+        }}>
+          UIdraft
+        </h2>
+        <p className="card-description" style={{ color: '#94A3B8', lineHeight: '1.5' }}>
+          Design-to-product workflow focusing on UI composition and reusable patterns. Explore templates, iterate, and ship.
+        </p>
+      </a>
+    </div>
+    
+    <a 
+      href="https://uxarts.ai/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="card"
+      style={{
+        background: 'rgba(255, 255, 255, 0.05)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        borderRadius: '1rem',
+        padding: '2rem',
+        textDecoration: 'none',
+        color: 'inherit',
+        transition: 'all 0.3s ease',
+        backdropFilter: 'blur(10px)',
+        width: '100%',
+        maxWidth: '920px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '1rem'
+      }}
+    >
+      <div style={{
+        width: '2rem',
+        height: '2rem',
+        background: '#38BDF8',
+        borderRadius: '0.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexShrink: 0
+      }}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+          <path d="M2 12h20"/>
+        </svg>
+      </div>
+      <div style={{ flex: 1 }}>
+        <h2 className="card-title" style={{ 
+          fontSize: '1.5rem', 
+          fontWeight: '600', 
+          marginBottom: '0.5rem', 
+          color: '#E2E8F0' 
+        }}>
+          Visit UXarts
+        </h2>
+        <p className="card-description" style={{ color: '#94A3B8', lineHeight: '1.5' }}>
+          Learn more about the products and latest updates on UXarts.
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
+
+
