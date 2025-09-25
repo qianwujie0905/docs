@@ -11,12 +11,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Welcome",
+        "tab": "Overview",
         "groups": [
           {
             "group": "\u200B",
             "pages": [
-              "introduction/overview"
+              "overview"
             ]
           }
         ]
@@ -27,40 +27,40 @@
           {
             "group": "Guide",
             "pages": [
-              "introduction/welcome",
-              "introduction/getting-started",
-              "introduction/faq"
+              "superun/introduction/welcome",
+              "superun/introduction/getting-started",
+              "superun/introduction/faq"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "features/modes",
-              "features/editable-design",
-              "features/code-mode",
-              "features/knowledge",
-              "features/private-projects",
-              "features/publish",
-              "features/custom-domain",
-              "features/security"
+              "superun/features/modes",
+              "superun/features/editable-design",
+              "superun/features/code-mode",
+              "superun/features/knowledge",
+              "superun/features/private-projects",
+              "superun/features/publish",
+              "superun/features/custom-domain",
+              "superun/features/security"
             ]
           },
           {
             "group": "Tips & tricks",
             "pages": [
-              "tips-tricks/best-practice",
-              "tips-tricks/using-images",
-              "tips-tricks/from-idea-to-app",
-              "tips-tricks/avoiding-security-pitfalls"
+              "superun/tips-tricks/best-practice",
+              "superun/tips-tricks/using-images",
+              "superun/tips-tricks/from-idea-to-app",
+              "superun/tips-tricks/avoiding-security-pitfalls"
             ]
           },
           {
             "group": "Use Cases",
             "pages": [
-              "use-case/inspiration-time",
-              "use-case/landing-page",
-              "use-case/prototype",
-              "use-case/saas"
+              "superun/use-case/inspiration-time",
+              "superun/use-case/landing-page",
+              "superun/use-case/prototype",
+              "superun/use-case/saas"
             ]
           },
           {
@@ -116,18 +116,7 @@
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "superun",
-          "href": "https://superun.ai/",
-          "icon": "globe"
-        },
-        {
-          "anchor": "UIdraft",
-          "href": "https://uidraft.ai/",
-          "icon": "globe"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -149,14 +138,6 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
    ]
   },
   "footer": {
