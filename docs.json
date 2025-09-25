@@ -83,6 +83,12 @@
             ]
           },
           {
+            "group": "Figma-plugin",
+            "pages": [
+              "uidraft/figma-plugin"
+            ]
+          },
+          {
             "group": "Features",
             "pages": [
               "uidraft/features"
