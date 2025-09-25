@@ -7,7 +7,7 @@
     "light": "#94A3B8",
     "dark": "#0F172A"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -130,12 +130,7 @@
     "dark": "https://img01.yzcdn.cn/upload_files/2025/09/03/Fp8wW5KLn83uaOe0Epu6OwsvWmwN.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "UXarts",
-        "href": "https://uxarts.ai/"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Visit UXarts",
