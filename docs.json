@@ -8,6 +8,11 @@
     "light": "#94A3B8",
     "dark": "#0F172A"
   },
+  "scripts": {
+    "head": [
+      "<meta name=\"google-site-verification\" content=\"Asmph87JY6ZcrLQThmlj0OluYD82JTOy8ZiF-R3ExAs\" />"
+    ]
+  },
   "favicon": "public/favicon.svg",
   "navigation": {
     "tabs": [
