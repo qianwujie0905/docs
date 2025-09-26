@@ -46,6 +46,16 @@
             ]
           },
           {
+            "group": "Integrations",
+            "pages": [
+              "superun/integrations/introduction",
+              "superun/integrations/supabase",
+              "superun/integrations/resend",
+              "superun/integrations/ai",
+              "superun/integrations/stripe"
+            ]
+          },
+          {
             "group": "Tips & tricks",
             "pages": [
               "superun/tips-tricks/best-practice",
