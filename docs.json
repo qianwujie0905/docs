@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "UXarts",
+  "description": "UXarts Documentation: Guides, features, integrations, and best practices for Superun and UIdraft.",
   "colors": {
     "primary": "#38BDF8",
     "light": "#94A3B8",
