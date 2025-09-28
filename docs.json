@@ -15,9 +15,7 @@
         "groups": [
           {
             "group": "\u200B",
-            "pages": [
-              "overview"
-            ]
+            "pages": ["overview"]
           }
         ]
       },
@@ -46,7 +44,7 @@
             ]
           },
           {
-            "group": "Tips & tricks",
+            "group": "Tips & Tricks",
             "pages": [
               "superun/tips-tricks/best-practice",
               "superun/tips-tricks/using-images",
@@ -55,68 +53,8 @@
             ]
           },
           {
-            "group": "Use Cases",
-            "pages": [
-              "superun/use-case/inspiration-time",
-              "superun/use-case/landing-page",
-              "superun/use-case/prototype",
-              "superun/use-case/saas"
-            ]
-          },
-          {
             "group": "Changelog",
-            "pages": [
-              "superun/changelog"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "UIdraft",
-        "groups": [
-          {
-            "group": "Guide",
-            "pages": [
-              "uidraft/welcome",
-              "uidraft/getting-started",
-              "uidraft/faq"
-            ]
-          },
-          {
-            "group": "Figma-plugin",
-            "pages": [
-              "uidraft/figma-plugin"
-            ]
-          },
-          {
-            "group": "Features",
-            "pages": [
-              "uidraft/features"
-            ]
-          },
-          {
-            "group": "Plans",
-            "pages": [
-              "uidraft/pricing"
-            ]
-          },
-          {
-            "group": "Tips & tricks",
-            "pages": [
-              "uidraft/tips"
-            ]
-          },
-          {
-            "group": "Use Cases",
-            "pages": [
-              "uidraft/use-cases"
-            ]
-          },
-          {
-            "group": "Changelog",
-            "pages": [
-              "uidraft/changelog"
-            ]
+            "pages": ["superun/changelog"]
           }
         ]
       }
@@ -138,8 +76,7 @@
     }
   },
   "contextual": {
-    "options": [
-   ]
+    "options": []
   },
   "footer": {
     "socials": {}
