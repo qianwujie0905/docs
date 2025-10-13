@@ -11,6 +11,32 @@
   "head": [
     "<meta name=\"google-site-verification\" content=\"Asmph87JY6ZcrLQThmlj0OluYD82JTOy8ZiF-R3ExAs\" />"
   ],
+  "seo": {
+    "metatags": {
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "UXarts Documentation: Guides, features, integrations, and best practices for Superun and UIdraft.",
+      "keywords": "UXarts, Superun, UIdraft, documentation, integrations, Supabase, Stripe, Resend, AI, features, guides",
+      "author": "UXarts",
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "google-site-verification": "Asmph87JY6ZcrLQThmlj0OluYD82JTOy8ZiF-R3ExAs",
+      "theme-color": "#0F172A",
+      "color-scheme": "light dark",
+      "canonical": "https://docs.uxarts.ai",
+      "og:title": "UXarts Documentation",
+      "og:type": "website",
+      "og:url": "https://docs.uxarts.ai",
+      "og:image": "https://b.ux-cdn.com/uxarts/files/t20250924144227/ipkumj75.png",
+      "og:description": "Guides, features, integrations, and best practices for Superun and UIdraft.",
+      "og:site_name": "UXarts Docs",
+      "og:locale": "en_US",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UXarts Documentation",
+      "twitter:description": "Guides, features, integrations, and best practices for Superun and UIdraft.",
+      "twitter:image": "https://b.ux-cdn.com/uxarts/files/t20250924144227/ipkumj75.png"
+    }
+  },
   "favicon": "public/favicon.svg",
   "navigation": {
     "tabs": [
