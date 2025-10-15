@@ -136,7 +136,8 @@
           {
             "group": "Figma-plugin",
             "pages": [
-              "uidraft/figma-plugin"
+              "uidraft/figma-plugin",
+              "uidraft/user-guide"
             ]
           },
           {
