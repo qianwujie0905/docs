@@ -15,8 +15,8 @@
     "metatags": {
       "charset": "UTF-8",
       "viewport": "width=device-width, initial-scale=1.0",
-      "description": "Official UXarts Documentation: Complete guides for Superun AI website builder and UIdraft design-to-code platform. Learn integrations, features, and best practices.",
-      "keywords": "UXarts, Superun, UIdraft, AI website builder, design to code, documentation, Supabase integration, Stripe payment, Resend email, visual editor, Figma plugin, web development, no-code, low-code, AI development platform, website builder, app builder",
+      "description": "UXarts Documentation: Official guides for Superun AI website builder and UIdraft design-to-code platform. Learn how to build websites and apps with AI-powered development tools, Supabase integration, and visual editing.",
+      "keywords": "UXarts, Superun, UIdraft, AI website builder, design to code, documentation, Supabase integration, Stripe payment, Resend email, visual editor, Figma plugin, web development, no-code, low-code, AI development platform, website builder, app builder, docs.uxarts.ai, UXarts documentation",
       "author": "UXarts Team",
       "robots": "index, follow, max-image-preview:large",
       "googlebot": "index, follow",
