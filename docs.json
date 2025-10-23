@@ -79,6 +79,7 @@
               "superun/features/modes",
               "superun/features/editable-design",
               "superun/features/code-mode",
+              "superun/features/ai",
               "superun/features/knowledge",
               "superun/features/private-projects",
               "superun/features/publish",
