@@ -16,55 +16,32 @@
     <priority>0.9</priority>
   </url>
   
-  <!-- Superun pages -->
+  <!-- Blog pages -->
   <url>
-    <loc>https://docs.uxarts.ai/superun/introduction/welcome</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/introduction/getting-started</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/features/modes</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/features/editable-design</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/features/code-mode</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/integrations/supabase</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/integrations/stripe</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://docs.uxarts.ai/superun/changelog</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://docs.uxarts.ai/blog</loc>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://docs.uxarts.ai/blog/announcements</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.uxarts.ai/blog/tutorials</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.uxarts.ai/blog/hello-world</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   
   <!-- UIdraft pages -->
   <url>
